@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+asteroids.so
+asteroids.dylib
+asteroids.dll
+asteroids.a
+asteroids.lib
+asteroids-test-*
+*.exe
+*.o
+*.lst
+.import
+dub.selections.json

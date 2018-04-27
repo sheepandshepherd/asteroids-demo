@@ -1,0 +1,21 @@
+[general]
+
+singleton=false
+load_once=true
+symbol_prefix="asteroids"
+reloadable=true
+
+[entry]
+
+UWP.32="res://asteroids/asteroids.dll"
+UWP.64="res://asteroids/asteroids.dll"
+Windows.64="res://asteroids/asteroids.dll"
+Windows.32="res://asteroids/asteroids.dll"
+windows="res://asteroids/asteroids.dll"
+
+[dependencies]
+
+UWP.32=[  ]
+UWP.64=[  ]
+Windows.64=[  ]
+Windows.32=[  ]

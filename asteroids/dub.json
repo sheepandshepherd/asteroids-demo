@@ -1,0 +1,19 @@
+{
+	"name": "asteroids",
+	"authors": [
+		"sheepandshepherd"
+	],
+	"description": "Example of a complete Godot-D project",
+	"copyright": "Copyright © 2018, sheepandshepherd",
+	"license": "MIT",
+	
+	"targetType": "dynamicLibrary",
+	
+	"sourcePaths": ["."],
+	"importPaths": ["."],
+	
+	"dependencies":
+	{
+		"godot-d": "~>0.0.5",
+	},
+}
