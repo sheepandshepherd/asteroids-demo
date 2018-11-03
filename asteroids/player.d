@@ -33,7 +33,7 @@ class Player : GodotScript!Area
 		}
 		
 		
-		if(Input.isActionPressed("fly"))
+		if(Input.isActionPressed(gs!"fly"))
 		{
 			translateObjectLocal(Vector3(0f, 0f, -delta * speed));
 			if(translation.length > 50f) translation = 50f * translation.normalized;

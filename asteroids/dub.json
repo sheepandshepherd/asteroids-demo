@@ -14,6 +14,6 @@
 	
 	"dependencies":
 	{
-		"godot-d": "~>0.0.5",
+		"godot-d": "~>0.1.0",
 	},
 }
