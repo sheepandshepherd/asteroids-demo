@@ -13,17 +13,18 @@ class Player : GodotScript!Area
 	
 	enum float speed = 25; /// units per second
 	
+	bool fly = false; /// should fly forward in the next frame
+	
 	@Method _ready()
 	{
 		
 	}
 	
-	@Method _process(float delta)
+	void faceScreenPosition(Vector2 p)
 	{
-		Vector2 mousePos = getTree.root.getMousePosition;
 		Camera camera = getTree.root.getCamera;
-		Vector3 rayOrigin = camera.projectRayOrigin(mousePos);
-		Vector3 rayNormal = camera.projectRayNormal(mousePos);
+		Vector3 rayOrigin = camera.projectRayOrigin(p);
+		Vector3 rayNormal = camera.projectRayNormal(p);
 		
 		Plane plane = Plane(Vector3(0f, 1f, 0f), 0f);
 		Vector3 intersect;
@@ -31,9 +32,38 @@ class Player : GodotScript!Area
 		{
 			lookAt(intersect, Vector3(0f, 1f, 0f));
 		}
+	}
+	
+	@Method _unhandledInput(scope InputEvent e)
+	{
+		// handle facing from mouse movement or screen drag
+		if(auto mm = e.as!InputEventMouseMotion)
+		{
+			faceScreenPosition(mm.position);
+		}
+		else if(auto sd = e.as!InputEventScreenDrag)
+		{
+			faceScreenPosition(sd.position);
+		}
 		
+		// handle movement from mouse click or screen touch
+		else if(auto mb = e.as!InputEventMouseButton)
+		{
+			fly = mb.pressed;
+		}
+		else if(auto st = e.as!InputEventScreenTouch)
+		{
+			fly = st.pressed;
+		}
 		
-		if(Input.isActionPressed(gs!"fly"))
+		// handle the rebindable fly mapping (keyboard, etc)
+		else if(e.isActionPressed(gs!"fly")) fly = true;
+		else if(e.isActionReleased(gs!"fly")) fly = false;
+	}
+	
+	@Method _process(float delta)
+	{
+		if(fly)
 		{
 			translateObjectLocal(Vector3(0f, 0f, -delta * speed));
 			if(translation.length > 50f) translation = 50f * translation.normalized;
