@@ -9,11 +9,13 @@
 	
 	"targetType": "dynamicLibrary",
 	
-	"sourcePaths": ["."],
-	"importPaths": ["."],
+	"sourcePaths": ["asteroids"],
+	"importPaths": ["asteroids"],
+
+	"preGenerateCommands": [ "dub run godot-d:list-classes" ],
 	
 	"dependencies":
 	{
-		"godot-d": "~>0.1.2",
+		"godot-d": {"path": "../godot-d"},
 	},
 }
