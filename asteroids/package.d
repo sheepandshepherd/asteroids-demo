@@ -12,9 +12,7 @@ import std.math;
 import asteroids.player;
 
 mixin GodotNativeLibrary!(
-	"asteroids",
-	Asteroids,
-	Player
+	"asteroids"
 );
 
 
