@@ -1,21 +1,26 @@
 {
-	"name": "asteroids",
 	"authors": [
 		"sheepandshepherd"
 	],
-	"description": "Example of a complete Godot-D project",
 	"copyright": "Copyright © 2018, sheepandshepherd",
+	"dependencies": {
+		"godot-d": {
+			"path": "addons/godot-d-importer/godot-d",
+			"version": ">=0.0.0"
+		}
+	},
+	"description": "Example of a complete Godot-D project",
+	"importPaths": [
+		"asteroids"
+	],
 	"license": "MIT",
-	
+	"name": "asteroids",
+	"preGenerateCommands": [
+		"dub run godot-d:pregenerate"
+	],
+	"sourcePaths": [
+		"asteroids"
+	],
 	"targetType": "dynamicLibrary",
-	
-	"sourcePaths": ["asteroids"],
-	"importPaths": ["asteroids"],
-
-	"preGenerateCommands": [ "dub run godot-d:pregenerate" ],
-	
-	"dependencies":
-	{
-		"godot-d": {"path": "addons/godot-d-importer/godot-d"}
-	}
+	"targetPath": "bin",
 }

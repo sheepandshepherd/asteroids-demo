@@ -7,9 +7,9 @@ reloadable=true
 
 [entry]
 
-UWP="res://asteroids.dll"
-windows="res://asteroids.dll"
-X11="res://libasteroids.so"
+UWP="res://bin/asteroids.dll"
+windows="res://bin/asteroids.dll"
+X11="res://bin/libasteroids.so"
 
 [dependencies]
 

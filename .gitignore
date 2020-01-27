@@ -2,14 +2,8 @@
 docs.json
 __dummy.html
 docs/
-libasteroids.so
-asteroids.dylib
-asteroids.dll
-asteroids.a
-asteroids.lib
-asteroids-test-*
+bin/
 *.exe
 *.o
 *.lst
 .import
-dub.selections.json
