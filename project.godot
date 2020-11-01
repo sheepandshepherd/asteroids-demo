@@ -21,7 +21,7 @@ config/icon="res://icon.png"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "godot-d-importer" )
+enabled=PoolStringArray( "godot-d-plugin" )
 
 [input]
 

@@ -2,10 +2,10 @@
 	"authors": [
 		"sheepandshepherd"
 	],
-	"copyright": "Copyright © 2018, sheepandshepherd",
+	"copyright": "Copyright © 2020, sheepandshepherd",
 	"dependencies": {
 		"godot-d": {
-			"path": "addons/godot-d-importer/godot-d",
+			"path": "addons/godot-d-plugin/godot-d",
 			"version": ">=0.0.0"
 		}
 	},

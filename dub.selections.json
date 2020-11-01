@@ -1,6 +1,6 @@
 {
 	"fileVersion": 1,
 	"versions": {
-		"godot-d": {"path":"addons/godot-d-importer/godot-d"}
+		"godot-d": {"path":"addons/godot-d-plugin/godot-d"}
 	}
 }
