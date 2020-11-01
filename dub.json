@@ -4,10 +4,7 @@
 	],
 	"copyright": "Copyright © 2020, sheepandshepherd",
 	"dependencies": {
-		"godot-d": {
-			"path": "addons/godot-d-plugin/godot-d",
-			"version": ">=0.0.0"
-		}
+		"godot-d": "~>0.1.9"
 	},
 	"description": "Example of a complete Godot-D project",
 	"importPaths": [

@@ -2,14 +2,12 @@ Asteroids demo
 ==============
 ![Screenshot](/screenshot.png)
 
-A simple [Godot-D](https://github.com/GodotNativeTools/godot-d) project using the [Godot-D plugin](https://github.com/sheepandshepherd/godot-d-importer).
+A simple [Godot-D](https://github.com/GodotNativeTools/godot-d) project.
 
 Usage
 -----
-1. Clone with `git clone --recursive https://github.com/sheepandshepherd/asteroids-demo.git`
-2. Build the editor plugin by running `dub` in `asteroids-demo/addons/godot-d-importer`
-3. Build the game by running `dub` in `asteroids-demo`
-4. Open the game in the Godot editor (`godot -e` in `asteroids-demo`, or use the GUI) to run the importer automatically
+1. Clone with `git clone https://github.com/sheepandshepherd/asteroids-demo.git`
+2. Build the game by running `dub` in `asteroids-demo`
 
 Links
 -----
