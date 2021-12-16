@@ -4,7 +4,7 @@
 	],
 	"copyright": "Copyright © 2020, sheepandshepherd",
 	"dependencies": {
-		"godot-d": "~>0.1.9"
+		"godot-d": "~>0.1.13"
 	},
 	"description": "Example of a complete Godot-D project",
 	"importPaths": [

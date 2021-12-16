@@ -1,6 +1,8 @@
 {
 	"fileVersion": 1,
 	"versions": {
-		"godot-d": "0.1.9"
+		"godot-d": "0.1.13",
+		"sumtype": "1.0.3",
+		"utf_bc": "0.2.1"
 	}
 }
